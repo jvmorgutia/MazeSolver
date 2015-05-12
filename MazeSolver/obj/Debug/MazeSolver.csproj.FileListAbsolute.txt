@@ -1,0 +1,6 @@
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\bin\Debug\MazeSolver.exe.config
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\bin\Debug\MazeSolver.exe
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\bin\Debug\MazeSolver.pdb
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\obj\Debug\MazeSolver.csprojResolveAssemblyReference.cache
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\obj\Debug\MazeSolver.exe
+c:\users\jesse.morgutia\documents\visual studio 2013\Projects\MazeSolver\MazeSolver\obj\Debug\MazeSolver.pdb
