@@ -29,6 +29,7 @@ namespace MazeSolveRec
         public MazeSolver(Bitmap maze)
         {
             this.maze = maze;
+
             startingNode = MazeHelper.FindStartingLocation(maze);
             map = new Dictionary<string, Node>();
             map.Add(startingNode.Key, startingNode);
