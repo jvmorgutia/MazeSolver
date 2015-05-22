@@ -12,6 +12,7 @@ namespace MazeCraze
         private int y;
         private bool isVisited;
         private bool isQueued;
+        private PixelColor pixel; 
 
         private Node parent;
 
@@ -38,22 +39,18 @@ namespace MazeCraze
             get { return parent; }
             set { parent = value; }
         }
-        public Node(int x, int y)
+        public PixelColor Pixel
+        {
+            get { return pixel; }
+            set { pixel = value; }
+        }
+        public Node(int x, int y, PixelColor pixel)
         {
             this.x = x;
             this.y = y;
+            this.pixel = pixel;
             isVisited = false;
             isQueued = false;
-        }
-        public static int GenerateKey(int i, int j)
-        {
-            return Convert.ToInt32(i.ToString() + j.ToString());
-        }
-   
-      
-    
-
-        
+        }      
     }
-
 }

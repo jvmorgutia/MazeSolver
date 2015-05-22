@@ -10,6 +10,7 @@ namespace MazeCraze
     {
         Format,
         InvalidArg,
+        NoPathFound,
         Unknown
     }
     public class Printer
@@ -24,11 +25,13 @@ namespace MazeCraze
                 case ErrorType.InvalidArg:
                     Console.WriteLine("Arguments could not be validated. Re-run the program.\n");
                     break;
+                case ErrorType.NoPathFound:
+                    Console.WriteLine("Error: No path was found");
+                    break;
                 case ErrorType.Unknown:
                     Console.WriteLine("An unknown error has occured. The program will now exit\n");
-                    break;
+                    break;               
             }
-            System.Environment.Exit(1);
         }
     }
 }
