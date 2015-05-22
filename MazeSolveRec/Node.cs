@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MazeSolveRec
+namespace MazeCraze
 {
     class Node
     {
         private int x;
         private int y;
-        private int weight;
-        private string key;
+        private bool isVisited;
+        private bool isQueued;
+
+        private Node parent;
 
         public int X
         {
@@ -21,19 +23,37 @@ namespace MazeSolveRec
         {
             get { return y; }
         }
-        public int Weight { get; set; }
-        public string Key
+        public bool IsVisited
         {
-            get { return key; }
+            get { return isVisited; }
+            set { isVisited = value; }
         }
-        
-        public Node(int x, int y, int weight)
+        public bool IsQueued
+        {
+            get { return isQueued; }
+            set { isQueued = value; }
+        }
+        public Node Parent
+        {
+            get { return parent; }
+            set { parent = value; }
+        }
+        public Node(int x, int y)
         {
             this.x = x;
             this.y = y;
-            Weight = weight;
-            key = x.ToString() + y.ToString();
+            isVisited = false;
+            isQueued = false;
         }
+        public static int GenerateKey(int i, int j)
+        {
+            return Convert.ToInt32(i.ToString() + j.ToString());
+        }
+   
+      
+    
+
+        
     }
 
 }

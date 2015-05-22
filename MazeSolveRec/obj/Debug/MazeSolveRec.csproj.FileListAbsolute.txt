@@ -17,3 +17,11 @@ C:\Users\Jesse\Google Drive\MazeSolveRec\MazeSolveRec\obj\Debug\MazeSolveRec.csp
 C:\Users\Jesse\Google Drive\MazeSolveRec\MazeSolveRec\obj\Debug\MazeSolveRec.exe
 C:\Users\Jesse\Google Drive\MazeSolveRec\MazeSolveRec\bin\Debug\MazeSolveRec.exe
 C:\Users\Jesse\Google Drive\MazeSolveRec\MazeSolveRec\bin\Debug\MazeSolveRec.pdb
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\bin\Debug\MazeSolveRec.exe.config
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\obj\Debug\MazeSolveRec.exe
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\obj\Debug\MazeSolveRec.pdb
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\obj\Debug\MazeSolveRec.csprojResolveAssemblyReference.cache
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\obj\Debug\MazeSolveRec.csproj.GenerateResource.Cache
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\bin\Debug\MazeSolveRec.exe
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\bin\Debug\MazeSolveRec.pdb
+C:\Users\Jesse\Documents\GitHub\MazeSolver\MazeSolveRec\obj\Debug\MazeCraze.Properties.Resources.resources

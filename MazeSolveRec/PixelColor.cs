@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MazeSolveRec
+namespace MazeCraze
 {
-    public enum ErrorType { 
-        Format,
-        InvalidArg,
-        Unknown
+    public enum PixelColor
+    {
+        Start,
+        Finish,
+        Blank,
+        Wall
     }
 }

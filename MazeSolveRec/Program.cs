@@ -4,24 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.IO;
 
-namespace MazeSolveRec
+namespace MazeCraze
 {
     
     class Program
     {
-    
+        public static Color RED = Color.FromArgb(255, 255, 0, 0);
+        public static Color GREEN = Color.FromArgb(255, 0, 255, 0);
+        public static Color BLUE = Color.FromArgb(255, 0, 0, 255);
+        public static Color BLACK = Color.FromArgb(255, 0, 0, 0);
         static void Main(string[] args)
         {
 
+            //-----------------------
+            //Validate Arguments
             if (args.Length < 2)
-                PrintErrorMessage(ErrorType.Format);
+                Printer.PrintError(ErrorType.Format);
             if (!IsValidArgument(args[0]) || !IsValidArgument(args[1]))
             {
-                PrintErrorMessage(ErrorType.InvalidArg);
+                Printer.PrintError(ErrorType.InvalidArg);
             }
+            //------------------------
+
             Bitmap image = new Bitmap(args[0]);
-            MazeSolver solver = new MazeSolver(image);
+            MazeSolver solver = new MazeSolver(image, RED,  BLUE, BLACK, GREEN);
             solver.SaveImage(args[1]);
                 
         }
@@ -31,22 +39,6 @@ namespace MazeSolveRec
             if (arg.EndsWith(".bmp") || arg.EndsWith(".bmp") || arg.EndsWith(".png"))
                 return true;
             return false;
-        }
-
-        public static void PrintErrorMessage(ErrorType error)
-        {
-            switch (error) {
-                case ErrorType.Format:
-                    Console.WriteLine("Argument format is incorrect. Re-run the program.\n");
-                    break;
-                case ErrorType.InvalidArg:
-                    Console.WriteLine("Arguments could not be validated. Re-run the program.\n");
-                    break;
-                case ErrorType.Unknown:
-                    Console.WriteLine("An unknown error has occured. The program will now exit\n");
-                    break;
-            }
-            System.Environment.Exit(1);
         }
     }
 }
