@@ -23,7 +23,7 @@ namespace MazeCraze
             switch (error)
             {
                 case ErrorType.Format:
-                    Console.WriteLine("Argument format is incorrect. The program will now exit\n");
+                    Console.WriteLine("maze.exe \"source.[bmp,png,jpg]\" \"destination.[bmp,png,jpg]\"\nFormat is incorrect. The program will now exit\n");
                     break;
                 case ErrorType.InvalidArg:
                     Console.WriteLine("Arguments could not be validated. The program will now exit\n");
