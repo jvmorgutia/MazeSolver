@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace MazeCraze
 {
-    class Node
+    public class Node
     {
         private int x;
         private int y;
         private bool isVisited;
         private bool isQueued;
-        private PixelColor pixel; 
-
+        private PixelColor pixel;
         private Node parent;
 
         public int X
@@ -51,6 +50,6 @@ namespace MazeCraze
             this.pixel = pixel;
             isVisited = false;
             isQueued = false;
-        }      
+        }
     }
 }
