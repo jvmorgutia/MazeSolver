@@ -9,11 +9,20 @@ namespace MazeCraze
 {
     class MazeSolver
     {
-
         private Bitmap bitmap;
         private Color start_color, finish_color, wall_color, path_color;
         private Node startNode;
-
+        /**
+        * Please let me explain why I chose to implement an array of nodes. 
+        * I understand that memory is not necessarily conserved when creating a 2D array 
+        * (especially if we have a big image!) however, in attempts to create a solution that would 
+        * use less memory (a Dictionary of nodes along the possible path) I noticed a dramatic decrease in 
+        * performance. 
+        * 
+        * Since most of the pixels on the image are blank, I decided to use this implementation as
+        * the best solution for this problem.
+        * 
+        **/
         private Node[,] maze;
         private Queue<Node> queue;
 
@@ -35,6 +44,7 @@ namespace MazeCraze
             while (queue.Count > 0)
             {
                 currentNode = queue.Dequeue();
+                currentNode.IsQueued = false;
                 if (currentNode.Pixel == PixelColor.Finish)
                 {
                     //A path is found!
