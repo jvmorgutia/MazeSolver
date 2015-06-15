@@ -13,6 +13,7 @@ namespace MazeCraze
         private Color start_color, finish_color, wall_color, path_color;
         private Node startNode;
         /**
+        *
         * I understand that memory is not necessarily conserved when creating a 2D array 
         * (especially if we have a big image!) however, in attempts to create a solution that would 
         * use less memory (a Dictionary of nodes along the possible path) I noticed a dramatic decrease in 
